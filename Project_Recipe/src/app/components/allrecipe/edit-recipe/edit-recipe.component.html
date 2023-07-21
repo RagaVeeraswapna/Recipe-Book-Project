@@ -1,0 +1,24 @@
+<div class="container">
+  <h2>Edit Recipe</h2>
+  <form (ngSubmit)="updateRecipe()" #editForm="ngForm">
+    <mat-form-field>
+      <input matInput placeholder="Title" [(ngModel)]="editRecipe.title" name="title" required>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Image URL" [(ngModel)]="editRecipe.image" name="image">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Author Name" [(ngModel)]="editRecipe.author_name" name="author_name" required>
+    </mat-form-field>
+    <mat-form-field>
+      <textarea matInput placeholder="Description" [(ngModel)]="editRecipe.description" name="description" required></textarea>
+    </mat-form-field>
+    <mat-form-field>
+      <textarea matInput placeholder="Content" [(ngModel)]="editRecipe.content" name="content" required></textarea>
+    </mat-form-field>
+    <div class="actions">
+      <button mat-button color="primary" type="submit">Save Changes</button>
+      <button mat-button color="warn" (click)="cancelEdit()">Cancel</button>
+    </div>
+  </form>
+</div>

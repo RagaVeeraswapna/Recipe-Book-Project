@@ -1,7 +1,28 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { IndexComponent } from './components/index/index.component';
+import { AllrecipeComponent } from './components/allrecipe/allrecipe.component';
+import { RecipeDetailsComponent } from './components/allrecipe/recipe-details/recipe-details.component';
+import { AddRecipeComponent } from './components/allrecipe/add-recipe/add-recipe.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path:'',
+    component:IndexComponent
+  },
+  {
+    path:'allrecipes',
+    component:AllrecipeComponent
+  },
+  {
+    path:'addrecipe',
+    component:AddRecipeComponent
+  },
+  {
+    path:'recipeDetails/:id',
+    component:RecipeDetailsComponent
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

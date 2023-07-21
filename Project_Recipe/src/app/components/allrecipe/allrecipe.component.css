@@ -1,0 +1,79 @@
+/* Add some space at the top for better alignment */
+.container-fluid {
+    margin-top: 20px;
+  }
+  
+  /* Style the card layout */
+  .news-card {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+  }
+  
+  /* Center the card content */
+  .news-card .mat-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Style the card image */
+  .image-container {
+    width: 100%;
+    height: 150px; /* Adjust the height as per your preference */
+    overflow: hidden;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Style the card title */
+  .title {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0;
+  }
+  
+  /* Style the card subtitle */
+  .author {
+    font-size: 14px;
+    text-align: center;
+    margin: 5px 0;
+  }
+  
+  /* Style the card description */
+  .description {
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  /* Add space between the cards */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Responsive styles for different screen sizes */
+  @media screen and (max-width: 767px) {
+    .news-card {
+      max-width: 100%;
+    }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .news-card {
+      max-width: 50%;
+    }
+  }
+  
+  @media screen and (min-width: 992px) {
+    .news-card {
+      max-width: 33.33%;
+    }
+  }
+  

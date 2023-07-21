@@ -1,0 +1,41 @@
+{
+  "recipes": [
+    {
+      "id": 2,
+      "title": "Savory Pasta Salad",
+      "image": "https://www.example.com/pasta-salad.jpg",
+      "author_id": 2,
+      "author_name": "Jane Smith",
+      "description": "A delicious pasta salad with veggies.",
+      "content": "Instructions for making the pasta salad...",
+      "tags": [
+        "pasta",
+        "salad",
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Refreshing Lemonade",
+      "image": "https://www.example.com/lemonade.jpg",
+      "author_id": 3,
+      "author_name": "Sam Brown",
+      "description": "A cool and refreshing lemonade drink.",
+      "content": "Instructions for making the lemonade...",
+      "tags": [
+        "drink",
+        "lemonade",
+        "beverage"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "asd",
+      "image": "wdfgh",
+      "author_name": "SDFGH",
+      "description": "asdfgh",
+      "content": "ASDFGH",
+      "tags": []
+    }
+  ]
+}
